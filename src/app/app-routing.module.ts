@@ -5,13 +5,13 @@ import { TestComponent } from './test/test.component';
 import { FirstComponent } from './first/first.component';
 
 const r: Routes = [
-  {path:'test',component:TestComponent},
-  {path:'f',component:FirstComponent}
+  { path: 'test', component: TestComponent },
+  { path: 'f', component: FirstComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(r)],
 
-exports: [RouterModule]
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }
