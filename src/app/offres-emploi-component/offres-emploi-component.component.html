@@ -1,1 +1,20 @@
+
 <h1>offres emploi</h1>
+<hr>
+<div *ngFor="let e of listEmploi">
+    <span>
+        {{e.reference}}
+        {{e.title}}
+        {{e.entreprise}}
+        {{e.etat}}
+    </span>
+    <input type="submit" value="Postuler" [disabled]="e.etat==false">
+</div>
+<hr>
+
+<div *ngFor="let e of listEmploi; let i=index">
+    <span *ngIf="e.etat!==false">   
+    </span>
+</div>
+    <input type="button" value="Bilan"  (click)="availableEmploi(i)">
+    <p>Number of jobs available is {{inc}}</p>
