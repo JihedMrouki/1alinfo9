@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { TestComponent } from './test/test.component';
 import { OffresEmploiComponentComponent } from './offres-emploi-component/offres-emploi-component.component';
+import { ArticlesComponentComponent } from './articles-component/articles-component.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { OffresEmploiComponentComponent } from './offres-emploi-component/offres
     AppComponent,
     FirstComponent,
     TestComponent,
-    OffresEmploiComponentComponent
+    OffresEmploiComponentComponent,
+    ArticlesComponentComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,13 @@
+<h1>Les articles du jour</h1>
+<div *ngFor="let a of listArticle">
+  <fieldset>
+    <legend>{{ a.title }}:</legend>
+    <label>{{ a.contenu }} </label><br />
+    <label>{{ a.auteur }}</label
+    ><br />
+    <label>{{ a.date }}</label
+    ><br />
+    <label>{{ a.category }}</label
+    ><br />
+  </fieldset>
+</div>

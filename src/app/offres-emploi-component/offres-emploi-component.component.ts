@@ -7,20 +7,20 @@ import { Emploi } from '../model/emploi';
 })
 export class OffresEmploiComponentComponent implements OnInit {
 
-  listEmploi:Emploi[]=[
- {reference: "AAAA" , title:"emploi 1", entreprise:"VDS1",etat:true},
- {reference: "BBBB" , title:"emploi 2", entreprise:"VDS2",etat:false},
- {reference: "CCCC" , title:"emploi 2", entreprise:"VDS3",etat:false},
- {reference: "DDD" , title:"emploi 4", entreprise:"VDS4",etat:true}
+  listEmploi: Emploi[] = [
+    { reference: "AAAA", title: "emploi 1", entreprise: "VDS1", etat: true },
+    { reference: "BBBB", title: "emploi 2", entreprise: "VDS2", etat: false },
+    { reference: "CCCC", title: "emploi 2", entreprise: "VDS3", etat: false },
+    { reference: "DDD", title: "emploi 4", entreprise: "VDS4", etat: true }
 
-]
-inc=0;
+  ]
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  availableEmploi(inc:number){
+  inc =0;
+  availableEmploi(inc: number) {
+    if (this.listEmploi[inc].etat == true)
     inc=inc++;
-    }
 }
+    } 
