@@ -18,9 +18,11 @@ export class OffresEmploiComponentComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  inc =0;
+  inc = 0;
   availableEmploi(inc: number) {
-    if (this.listEmploi[inc].etat == true)
-    inc=inc++;
+    for (let i = 0; i < this.listEmploi.length; i++) {
+      if (this.listEmploi[i].etat == true)
+        this.inc++;
+    }
+  }
 }
-    } 

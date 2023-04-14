@@ -8,6 +8,8 @@ import { FirstComponent } from './first/first.component';
 import { TestComponent } from './test/test.component';
 import { OffresEmploiComponentComponent } from './offres-emploi-component/offres-emploi-component.component';
 import { ArticlesComponentComponent } from './articles-component/articles-component.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { TemplateDrivenFormComponentComponent } from './template-driven-form-component/template-driven-form-component.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { ArticlesComponentComponent } from './articles-component/articles-compon
     FirstComponent,
     TestComponent,
     OffresEmploiComponentComponent,
-    ArticlesComponentComponent
+    ArticlesComponentComponent,
+    AddProductComponent,
+    TemplateDrivenFormComponentComponent
   ],
   imports: [
     BrowserModule,
